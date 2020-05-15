@@ -7,13 +7,22 @@
 }
 
 .social__link {
+
+    
+        img {
+        border-radius: 20%;
+        width: 30px;
+        height: 30px;
+    }
+    
     text-decoration: none;
-    margin-left: 5px;
-    margin-right: 10px;
+    margin-left: 10px;
     margin-left: none;
     margin-top: 10px;
     
-    &:hover {
+    transition: transform .2s linear;
 
+    &:hover {
+        transform: translateY(-5px);
     }
 }

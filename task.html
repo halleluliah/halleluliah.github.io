@@ -1,0 +1,1397 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>task</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-оглавление" class="anchor" href="#%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Оглавление</h1>
+
+<ul>
+<li>
+<a href="#user-content-%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание</a>
+<ul>
+<li><a href="#user-content-%D0%A6%D0%B5%D0%BB%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Цель работы</a></li>
+<li><a href="#user-content-%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D1%88%D0%B0%D0%B3%D0%B8">Задачи (шаги)</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-1-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%88%D0%B8%D0%BD">Шаг 1. Установка виртуального окружения и создание виртуальных машин</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-2-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8">Шаг 2. Настройка локальной сети</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-3-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Шаг 3. Настройка сетевой файловой системы.</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-4-%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BF%D0%BE-pxe">Шаг 4. Загрузка операционной системы по PXE.</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-5-%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B5%D0%B9-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9">Шаг 5. Синхронизация учетных записей пользователей</a></li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-6-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-mpi-%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87">Шаг 6. Установка MPI и запуск распределенных задач</a></li>
+<li>
+<a href="#user-content-%D0%A8%D0%B0%D0%B3-7-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B5%D0%B9-slurm">Шаг 7. Система очередей Slurm</a>
+<ul>
+<li><a href="#user-content-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-slurm">Настройка Slurm</a></li>
+<li><a href="#user-content-%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE-openmpi">Дополнение про openmpi</a></li>
+</ul>
+</li>
+<li><a href="#user-content-%D0%A8%D0%B0%D0%B3-8-%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8">Шаг 8. Запуск вычислительной задачи</a></li>
+<li><a href="#user-content-%D0%A4%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%BE">Финальное слово</a></li>
+</ul>
+</li>
+<li>
+<a href="#user-content-%D0%9F%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%B8">Полезные инструкции.</a>
+<ul>
+<li><a href="#user-content-%D0%A1%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8">Синхронизация времени</a></li>
+<li><a href="#user-content-%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-invalid-node-name-specified-%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87-srun">Ошибка <code>Invalid node name specified</code> при запуске задач srun.</a></li>
+<li><a href="#user-content-%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-required-node-not-available-down-drained-or-reserved-%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-srun">Ошибка <code>Required node not available (down, drained or reserved)</code> при запуске задачи srun.</a></li>
+<li><a href="#user-content-%D0%9F%D1%80%D0%B8-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0-yum-%D0%BD%D0%B5-%D0%BC%D0%BE%D0%B6%D0%B5%D1%82-%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D1%81-%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D0%B0%D0%BC%D0%B8-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">При редактировании контейнера Yum не может связаться с зеркалами удаленного репозитория</a></li>
+<li><a href="#user-content-%D0%9F%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpiexec-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-orte-was-unable-to-reliably-start-one-or-more-daemons">При запуске mpiexec выдает ошибку <code>ORTE was unable to reliably start one or more daemons</code></a></li>
+<li><a href="#user-content-%D0%9F%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpiexec-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-there-are-not-enough-slots-available-in-the-system">При запуске mpiexec выдает ошибку <code>There are not enough slots available in the system</code></a></li>
+<li><a href="#user-content-%D0%9F%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-srun-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-srun-error-couldnt-find-the-specified-plugin-name-for-mpipmix">При запуске srun выдает ошибку <code>srun: error: Couldn't find the specified plugin name for mpi/pmix</code></a></li>
+<li><a href="#user-content-%D0%9F%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpi-helloc-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B0%D0%B5%D1%82">При запуске mpi hello.c программа зависает</a></li>
+</ul>
+</li>
+</ul>
+
+<p><a id="user-content-Описание"></a></p>
+<h1>
+<a id="user-content-описание" class="anchor" href="#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Описание</h1>
+<p>Практические работы по курсу "Операционные системы" будут посвящены изучению и настройке распределенных вариантов операционных систем, при которых в сеть объединены несколько компьютеров, выполняющих одну общую задачу. Этот вариант настройки предполагает возможность горизонтального масштабирования вычислительных мощностей и в основном используется в области высокопроизводительных вычислений и большиз данных.
+Обычно такие системы являются гомогенными, то есть объединяют несколько компьютеров с одинаковой конфигурацией. Большие производственные центры обработки данных могут включать сотни или тысячи узлов. Например, суперкомпьютер <a href="https://www.msu.ru/lomonosov/science/computer.html" rel="nofollow">МГУ "Ломоносов"</a> объединяет 6654 вычислительных узла. Все компьютеры из мирового рейтинга <a href="https://www.top500.org/lists/top500/" rel="nofollow">ТОП500</a> настроены подобным образом.</p>
+<p>В ходе выполнения лабораторных работ мы создадим и настроим подобную сетевую операционную систему на виртуальных машинах и запустим на ней тестовую вычислительную задачу.
+Каждая лабораторная работа основана на результате выполнения предыдущей, поэтому выполнять их необходимо строго последовательно. Финальный результат (готовый проект) достижим только при успешном выполнении всех лабораторных работ. Преподавателю сдаётся только финальный результат. Нет необходимости сдавать каждую лабораторную работу по отдельности.</p>
+<p>Далее по тексту лабораторные работы будут называться <em>шагами</em> по настройке операционной системы. Основная ОС, в которую Вы установите виртуальные машины будет называться <em>хост</em>, а сами виртуальные машины <em>гостевыми</em>.</p>
+<p><a id="user-content-Цель-работы"></a></p>
+<h2>
+<a id="user-content-цель-работы" class="anchor" href="#%D1%86%D0%B5%D0%BB%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Цель работы</h2>
+<p>Настроить сетевую операционную систему на трех виртуальных машинах и протестировать её производительность на примере тестовой вычислительной задачи.</p>
+<p><a id="user-content-Задачи-шаги"></a></p>
+<h2>
+<a id="user-content-задачи-шаги" class="anchor" href="#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D1%88%D0%B0%D0%B3%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Задачи (шаги)</h2>
+<ol>
+<li>Установить три виртуальных машины</li>
+<li>Сконфигурировать локальную сеть между ними</li>
+<li>Настроить сетевую файловую систему между узлами</li>
+<li>Добавить возможность сетевой загрузки операционной системы с главного узла по pxe</li>
+<li>Обеспечить синхронизацию учетных записей пользователей между узлами</li>
+<li>Установить библиотеку MPI для запуска распределенных задач на узлах</li>
+<li>Установить систему очередей Slurm и протестировать несколько задач в очереди</li>
+<li>Запустить тестовую вычислительную задачу на нескольких виртуальных машинах в параллельном режиме</li>
+</ol>
+<p><a id="user-content-Шаг-1-Установка-виртуального-окружения-и-создание-виртуальных-машин"></a></p>
+<h2>
+<a id="user-content-шаг-1-установка-виртуального-окружения-и-создание-виртуальных-машин" class="anchor" href="#%D1%88%D0%B0%D0%B3-1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BC%D0%B0%D1%88%D0%B8%D0%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 1. Установка виртуального окружения и создание виртуальных машин</h2>
+<p>Для выполнения работы рекомендуется использовать ПО <a href="https://www.virtualbox.org/" rel="nofollow">Oracle VM Virtualbox</a>, но можно использовать любую другую виртуальную среду. В данном проекте нет привязки к специфике работы конкретного аппаратного обеспечения.</p>
+<p>Загрузитие и установите Virtualbox и создайте в нём три виртуальные машины.
+Для каждой системы нужно создать свой независимый жесткий диск, и предоставить минимум 500мб оперативной памяти и 5гб пространства на жестком диске. Лучше пространство для жесткого диска указывать с запасом. Виртуальная машина занимает физическое пространство по требованию.</p>
+<p>После создания виртуальной машины зайдите в её настройки, в раздел "дисплей" -&gt; "экран" и укажите тип графического контроллера <code>VBoxVGA</code>. По умолчанию указан SVGA контроллер, максимальное разрешение для которого в режиме совместимости будет 800x600 пикселей. Большинство установщиков операционных систем не поддерживают такое маленькое разрешение, таким образом интерфейс установки будет обрезан.</p>
+<p>Далее, запустите машины и укажите образ своей операционной системы. Для использования рекомендуется <a href="https://www.centos.org/" rel="nofollow">CentOS Linux 7 (не stream)</a>, но подойдет любая другая Linux операционная система. На выбор предложится загрузка boot диска и DVD. Используйте Boot образ. На рисунке ниже приведен пример основных настроек операционной системы.</p>
+<p><a href="/D:/Seafile/main/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%B5%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%20%D0%98%D0%91/%D0%BE%D0%B1%D1%80-2022-1/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/step1/Screenshot_1.png" target="_blank" rel="noopener noreferrer"><img src="/D:/Seafile/main/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%B5%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%20%D0%98%D0%91/%D0%BE%D0%B1%D1%80-2022-1/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/step1/Screenshot_1.png" alt="im1" style="max-width:100%;"></a></p>
+<p>Далее установите операционные системы. Можно произвести установку на одной виртуальной машине, и продублировать её жесткий диск на две другие машины.</p>
+<p>При дублировании удостоверьтесь что mac-адреса сетевых карт виртуальных машин отличаются. Иначе корректная работа сети не гарантируется.</p>
+<p>Разметку жесткого диска при установке можно использовать самую простую (по умолчанию).
+Чтобы подключились интернет-репозитории, нужно зайти в раздел "Network" установщика и включить сетевой адаптер. По умолчанию виртуальная машина устанавливается с одним сетевым адаптером типа NAT. Если Вы не меняли стандартные настройки, то для включения интернета в виртуальной машине достаточно активировать сетевой адаптер. IP адрес и DNS сервера пропишутся автоматически.</p>
+<p>В разделе установщика "Software Selection" выберите server либо minimal. Не устанавливайте графический интерфейс: в нашем случае он будет бесполезен и при этом будет тратить много аппаратных ресурсов.</p>
+<p>Установщик может предложить установить root-пароль. Обязательно его задайте, чтобы он был одинаковым для всех трех виртуальных машин. Нового пользователя можно не создавать в момент установки ОС.</p>
+<p><a id="user-content-Шаг-2-Настройка-локальной-сети"></a></p>
+<h2>
+<a id="user-content-шаг-2-настройка-локальной-сети" class="anchor" href="#%D1%88%D0%B0%D0%B3-2-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 2. Настройка локальной сети</h2>
+<p>На каждой виртуальной машине Вам понадобятся одновременно два сетевых адаптера: "NAT" для связи с интернетом и "локальная сеть" для связи между виртуальными машинами и связи с хостом.
+Для начала настройте общую сеть с хостом. IP адреса персонализированы для каждого студента и прикреплены к заданию в файле "Идентификаторы.xlsx".</p>
+<p>На хост машине (ваша основная операционная система) создастся виртуальный сетевой адаптер. Настройте для него IP адрес 192.168.*.1 (из столбца IP хоста в excel файле) через интерфейс операционной системы либо через раздел меню "файл" -&gt; "виртуальные адаптеры хоста" в virtualbox. Сетевой шлюз указывать не обязательно.</p>
+<p>Отключите DHCP сервер в виртуальном адаптере хоста, это делается в настройках виртуальных адаптеров virtualbox. Он будет мешать при дальнейшей настройке PXE. Пример приведен на скриншоте:</p>
+<p><a href="/D:/Seafile/main/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%B5%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%20%D0%98%D0%91/%D0%BE%D0%B1%D1%80-2022-1/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/step1/Screenshot_2.png" target="_blank" rel="noopener noreferrer"><img src="/D:/Seafile/main/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%B5%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%20%D0%98%D0%91/%D0%BE%D0%B1%D1%80-2022-1/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/step1/Screenshot_2.png" alt="im2" style="max-width:100%;"></a></p>
+<p>Далее выключите ваши виртуальные машины, если они были запущены, и в настройках в разделе "сеть" включите 2 сетевых адаптера. Адаптер 1 в режиме "Виртуальный адаптер хоста", адаптер 2 в режиме "NAT". Порядок адаптеров будет важен при дальнейших шагах настройки.</p>
+<p>Настройка сетевых адаптеров гостевых виртуальных машин производится через командную строку. Текущий статус сети можно проверить командой <code>ip a</code>.</p>
+<p>Конфигурация сетевого интерфейса хранится в папке <code>/etc/sysconfig/network-scripts</code> в соответствующем файле с префиксом ifcfg (там же конфигурационные файлы других интерфейсов). Адаптер, который нам надо настроить, имеет имя <code>enp0s3</code>. Для него нам нужно указать статический тип адресации и IP адрес из столбца "IP VM1/2/3" excel-файла. Маску подсети указывайте /24 (например, 192.168.121.2/24). Сетевой шлюз указывать нет необходимости, т.к. все машины будут работать в одной подсети. Подробней про настройку сети можно прочитать <a href="https://selectel.ru/blog/setup-network-centos-7/" rel="nofollow">по ссылке</a>.</p>
+<p>Альтернативой ручной правке текстовых файлов является команда <code>nmtui</code>.
+В настройках сетевых адаптеров проверьте чтобы стояла галочка "Automatically connect".
+Если в nmtui виден один адаптер, посмотрите название второго командой <code>ip a</code>, и добавьте его в nmtui вручную.</p>
+<p>Настройки сети применяются либо после перезагрузки виртуальных машин либо при перезагрузке сервера сети командой <code>systemctl restart network</code>.</p>
+<p>Теперь проверьте доступность узлов по сети командой ping. Все машины должны видеть и пинговать друг друга. С хост машины все узлы тоже должны быть доступны. Далее, попробуйте на хост машине ввести команду <code>ssh root@&lt;IP VM1&gt;</code> где вместо <code>&lt;IP VM1&gt;</code> подставьте адрес первой машины. Вы должны подключиться к консоли виртуальной машины. То же самое можно сделать и со второй и третей машинами. Дальнейшую работу рекомендуется проводить из командной строки хост машины по протоколу SSH, т.к. работает буфер обмена.</p>
+<p>Также, проверьте пинг до любого сайта в интернете.</p>
+<p><em>Подсказка: для упрощения работы в консоли linux установите пакет <code>bash-completion</code>. Тогда по нажатию клавиши <code>TAB</code> будет работать автодополнение.</em></p>
+<p><em>Подсказка: в centos, redhat и rocky системный менеджер пакетов: <code>yum</code> либо <code>dnf</code>.</em></p>
+<p><a id="user-content-Шаг-3-Настройка-сетевой-файловой-системы"></a></p>
+<h2>
+<a id="user-content-шаг-3-настройка-сетевой-файловой-системы" class="anchor" href="#%D1%88%D0%B0%D0%B3-3-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 3. Настройка сетевой файловой системы.</h2>
+<p>Для дальнейшего выполнения работ необходимо отключить файервол:</p>
+<pre><code>systemctl disable firewalld
+systemctl stop firewalld
+</code></pre>
+<p>В реальных серверах вместо полного отключения, для каждого сервиса в файерволе создаются разрешающие правила направления траффика. Отключение файервола разрешает направление сетевого трафика в любом направлении по любому порту.</p>
+<p>В ОС Linux как и в Windows существуют широкие возможности по передаче файлов по сети. Причем, можно передавать как отдельные файлы по различным протоколам (sftp, ftp, http), так и реализовывать полноценные файловые системы. В Windows это протокол SMB (Server Message Block) или ранее CIFS (Common Internet File System), в Linux это файловая система NFS (Network File System).</p>
+<p>Задача - сделать папку и <code>/opt</code> общей на всех виртуальных машинах. То есть, чтобы создание и изменение файла в этих папках отражалось на всех системах. Виртуальная машина 1 будет физически хранить эти папки и раздавать по сети, а машины 2 и 3 смонтируют их по NFS.</p>
+<p>Для решения этой задачи сперва нужно сделать так, чтобы все пользователи на всех машинах имели одинаковые логины и пароли. Это пригодится в будущем. Для этого скопируйте файлы <code>/etc/passwd</code> <code>/etc/shadow</code>, <code>/etc/group</code> с первого узла на два других по протоколу ssh (команда <code>scp</code>). Если Вы ещё не создавали учетных записей в операционных системах, а пароль для пользователя root везде указывали одинаковым, то копировать учетные записи не обязательно.</p>
+<p>Далее необходимо установить nfs (пакет nfs-utils) на всех узлах и правильно его сконфигурировать. Примерная инструкция к действию доступна по адресу <a href="https://winitpro.ru/index.php/2020/06/05/ustanovka-nastrojka-nfs-servera-i-klienta-linux/" rel="nofollow">https://winitpro.ru/index.php/2020/06/05/ustanovka-nastrojka-nfs-servera-i-klienta-linux/</a> за исключением того что нам нужно экспортировать папку <code>/opt</code>.</p>
+<p>На первой машине пропишите эти папки в <code>/etc/exports</code>  (указывается какие папки следует раздавать и в какую подсеть), на второй и третьей машине в <code>/etc/fstab</code> (указывается по какому адресу брать данные и в какую папку монтировать).</p>
+<p>Содержимое файла <code>/etc/exports</code>:</p>
+<pre><code>/opt   192.168.111.0/255.255.255.0(sync,rw,no_root_squash)
+</code></pre>
+<p>Строки для добавления в <code>/etc/fstab</code>:</p>
+<pre><code>192.168.111.2:/opt /opt nfs nfsvers=3,nodev,nosuid 0 0
+</code></pre>
+<p>Удостоверьтесь, что в Ваших файлах указаны правильные IP адреса.</p>
+<p>После настройки nfs попробуйте создать в папке <code>/opt</code> тестовый файл или папку на одном узле и проверить появился ли он на другом.</p>
+<p><em>Совет: ознакомьтесь с синтаксисом файлов <code>/etc/exports</code> и <code>/etc/fstab</code>. Посмотрите в документации описание приведенных ключей монтирования папок, а также другие ключи. Они могут пригодиться Вам в будущем.</em></p>
+<p><a id="user-content-Шаг-4-Загрузка-операционной-системы-по-pxe"></a></p>
+<h2>
+<a id="user-content-шаг-4-загрузка-операционной-системы-по-pxe" class="anchor" href="#%D1%88%D0%B0%D0%B3-4-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BF%D0%BE-pxe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 4. Загрузка операционной системы по PXE.</h2>
+<p>Следующим шагом будет перенастройка схемы работы виртуальных машин. Когда мы убедились в работоспособности сети, сконфигурируем систему таким образом чтобы две машины загружали образ операционной системы с первой машины. Все настройки выполняются только на одной машине, две другие переключаются в сетевой режим загрузки.</p>
+<p>В классическом подходе загрузки операционной системы по сети предлагается сформировать образ системы и сконфигурировать tftp-сервер для раздачи файлов, а также dhcp-сервер для раздачи IP адресов сетевым машинам. Этот подход не удобен по нескольким причинам:</p>
+<ol>
+<li>Вычислительная сеть может быть не гомогенной, тогда для разных групп вычислителей необходимо формировать разные образы, то есть создавать сразу нескольк tftp-серверов.</li>
+<li>Каждая машина может иметь свои настройки, например hostname, IP адрес, которые придется прописывать только после полной загрузки.</li>
+</ol>
+<p>Для решения проблем предлагается использовать систему warewulf(<a href="https://warewulf.org/" rel="nofollow">https://warewulf.org/</a>).</p>
+<p>Установим warewulf (команды вводите по очереди):</p>
+<pre><code>yum install -y https://repo.ctrliq.com/rhel/8/ciq-release.rpm
+</code></pre>
+<pre><code>yum install -y warewulf
+</code></pre>
+<p>Отредактируйте файл <code>/etc/warewulf/warewulf.conf</code>. Актуализируйте следующие IP адреса:</p>
+<ul>
+<li>
+<code>ipaddr</code>: адрес виртуальной машины 1 в локальной сети</li>
+<li>
+<code>dhcp:range start</code> и <code>dhcp:range end</code>: зона ip адресов, которые будут выдаваться новым узлам в сети. Можно оставить так же с 50 по 99, но указать свой адрес подсети.</li>
+</ul>
+<p><em>Совет: Обратите внимание какие папки дополнительно будут экспортироваться в разделе <code>nfs</code> в конфиг-файле.</em></p>
+<p>Затем установим DNS имя для первой виртуальной машины командой:</p>
+<pre><code>echo "n1" &gt; /etc/hostname
+</code></pre>
+<p>Обновим файл с хостами, чтобы остальные машины тоже знали имя первой машины. Для этого откройте в текстовом редакторе файл <code>/etc/warewulf/hosts.tmpl</code>, и после строки <code>Do not edit after this line ...</code> добавьте строку типа (не забудьте вставить свой IP):</p>
+<pre><code>192.168.111.2 n1
+</code></pre>
+<p>Запустим конфигурацию сервисов и активируем warewulf демона:</p>
+<pre><code>wwctl configure --all
+systemctl enable --now warewulfd
+</code></pre>
+<p>Проверим статус сервера:</p>
+<pre><code>wwctl server status
+</code></pre>
+<p>В случае ошибки логи доступны по адресу: <code>/var/log/warewulfd.log</code>.</p>
+<p>Подготовим образ CentOS, который будет загружаться на других виртуальных машинах.
+Warewulf поддерживает импорт виртуальных машин из публичных сервисов. Например, docker:</p>
+<pre><code>wwctl container import docker://warewulf/centos-7 centos-7 --setdefault
+</code></pre>
+<p>Также импортируем ядро в контейнер, с которым будут загружаться 2 и 3 виртуальные машины. Это будет то же ядро, что запущено на первой виртуальной машине:</p>
+<pre><code>wwctl kernel import $(uname -r) --setdefault
+</code></pre>
+<p><em>Совет 1: попробуйте отдельно запустить команду uname -r. Что она выдаёт? Последняя ли это версия ядра? Какие версии ещё есть?</em></p>
+<p><em>Совет 2: откройте документацию warewulf и ознакомьтесь с назначением ключа <code>--setdefault</code></em></p>
+<p>Далее установим маску подсети и сетевой шлюз для всех узлов (в gateway укажите адрес VM1):</p>
+<pre><code>wwctl profile set -y default --netdev eth0 --netmask 255.255.255.0 --gateway 192.168.111.2
+</code></pre>
+<p><strong>В обновленной версии инструкции вместо <code>--netdev default</code> надо указывать <code>--netdev eth0</code>. Если Вы уже сделали этот шаг со старым ключом, то удалите старое устройство: <code>wwctl profile set -y default --netdel default</code>, и добавьте новое командой выше.</strong></p>
+<p>Теперь добавим узлы. В свойствах виртуальных машин (либо командой <code>ip a</code>) уточните mac адреса сетевых карт подключенных ко внутренней сети.
+На главной машине добавьте два узла командой <code>wwctl node add</code>. Синтаксис следующий:</p>
+<pre><code>wwctl node add n2 -I 192.168.111.3 --hwaddr 00:00:00:00:00
+</code></pre>
+<p><strong>В обновленной версии инструкции удален ключ <code>--netdev default</code>. Если Вы уже сделали этот шаг со старым ключом, то удалите все узлы и профили, и добавьте их заново, либо поменяйте имя адаптера с default на eth0.</strong></p>
+<p><em>Подсказка: команда <code>wwctl</code> оборудована системой подсказок. Для этого добавьте ключ <code>-h</code> к интересующей вас команде. Например:</em></p>
+<pre><code>wwctl -h
+wwctl node -h
+wwctl node add -h
+</code></pre>
+<p>Чтобы перезагрузить настройки сервера warewulf и обновить информацию об узлах введите команду</p>
+<pre><code>wwctl server reload
+</code></pre>
+<p>Для того чтобы warewulf внес в hosts файл инфомрацию о новом сервере, введите</p>
+<pre><code>wwctl configure hosts
+</code></pre>
+<p>Теперь виртуальные машины готовы к загрузке. В реальной серверной сборке достаточно переключить вычислительные машины на загрузку по сети (pxe), и перезагрузить компьютер. Процесс загрузки описан в <a href="https://warewulf.org/docs/enchiridion/provisioning" rel="nofollow">документации</a>. Warewulf готовит образ системы <code>vmlinuz</code> в сжатом bz-архиве для ускорения его передачи по сети. Но функция поддержки сжатых образов не добавлена в ipxe в VirtualBox. Для работы необходимо скачать собственный загрузочный образ ipxe под адресу <a href="https://boot.ipxe.org/ipxe.iso" rel="nofollow">https://boot.ipxe.org/ipxe.iso</a> на хост машину (ту, на которой установлен virtualbox). И в свойствах 2 и 3 виртуальных машин указать загрузку с диска. В качестве диска укажите скачанный <code>ipxe.iso</code>.</p>
+<p>Если всё сделано верно, виртуальная машина загрузит операционную систему по сети, и синхронизирует пароли и файл hosts.</p>
+<p><a id="user-content-Шаг-5-Синхронизация-учетных-записей-пользователей"></a></p>
+<h2>
+<a id="user-content-шаг-5-синхронизация-учетных-записей-пользователей" class="anchor" href="#%D1%88%D0%B0%D0%B3-5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B5%D0%B9-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 5. Синхронизация учетных записей пользователей</h2>
+<p>Для дальнейшего удобства работы установите в образ загружаемой системы пакеты sudo, htop, NetworkManager, nano. Можете добавить в список все необходимые Вам дополнительные пакеты, которые хотите видеть в загружаемой виртуальной машине.</p>
+<p>Для настройки загружаемого образа виртуальной машины команды в ней можно запускать через <code>wwctl container exec</code>. Пример работы:</p>
+<div class="highlight highlight-source-shell"><pre>$ sudo wwctl container <span class="pl-c1">exec</span> rocky-8 /bin/sh
+[rocky-8] Warewulf<span class="pl-k">&gt;</span> cat /etc/rocky-release
+Rocky Linux release 8.4 (Green Obsidian)
+[rocky-8] Warewulf<span class="pl-k">&gt;</span> <span class="pl-c1">exit</span>
+Rebuilding container...
+[INFO]     Skipping (VNFS is current)</pre></div>
+<p>Здесь <code>rocky-8</code> - это имя виртуального контейнера. Мы называли свой <code>centos-7</code>.</p>
+<p>Также можно связывать директории основной машины с контейнером опцией <code>--bind</code>. Пример:</p>
+<div class="highlight highlight-source-shell"><pre>$ sudo wwctl container <span class="pl-c1">exec</span> --bind /tmp:/mnt rocky-8 /bin/sh
+[rocky-8] Warewulf<span class="pl-k">&gt;</span> </pre></div>
+<p>После каждой правки файлов образа warewulf автоматически запускает процесс его пересборки.</p>
+<p>Учетные записи синхронизируются средствами warefulf. Механизм работы с файлами называется <a href="https://warewulf.org/docs/enchiridion/overlays" rel="nofollow">warewulf overlays</a>. Ознакомьтесь с его документацией и удостоверьтесь что файлы с учетными записями <code>/etc/passwd</code>, <code>/etc/group</code> импортированы в оверлей <code>runtime</code>. Если нет, импортируйте их самостоятельно. Машины-клиенты опрашивают главную машину на наличие обновлений каждые 5 минут, поэтому получат обновленные файлы в течение этого времени. Файл <code>/etc/shadow</code> синхронизировать не нужно, так как мы настроим между узлами доступ по ключу. По умолчанию входить на загружаемые узлы можно под учетной записью <code>root</code>, она настроена без пароля.</p>
+<p>Создайте новую учетную запись на главной машине, проверьте как она синхронизировалась с остальными машинами (содержимое файла <code>/etc/passwd</code>).
+Также, проверьте, присутствует ли на всех машинах домашняя директория нового пользователя (подпапка в папке <code>/home</code>).</p>
+<p>Попробуйте от имени нового созданного пользователя подключиться по ssh к другим машинам. Подключение не должно проходить, так как не сихнхронизируется файл с паролями.</p>
+<p>Теперь от имени нового созданного пользователя на узле <code>n1</code> сгенерируйте ssh-ключ, и скопируйте его командой <code>ssh-copy-id</code> на эту же машину <code>n1</code>. При генерации ключа не задавайте пароль. Так как сгенерированные и импортированные ключи хранятся в папке <code>/home</code>, а она синхронизируется по <code>nfs</code>, то ключи должны работать на всех узлах. Если всё настроено верно, по команде <code>ssh n2</code> на узле <code>n1</code> вы должны оказаться на машине n2 без запроса пароля - это важно для следующего шага. Если система запрашивает пароль, проверьте правильность настройки.</p>
+<p><em>Если команда <code>ssh n2</code> выполняется медленно, то поменяйте в файле <code>/etc/ssh/sshd_config</code> значение <code>UseDNS</code> на <code>no</code>, и не забудьте раскомментировать эту строку. После этого пересоберите контейнер и перезагрузите узлы <code>n2</code> и <code>n3</code>.</em></p>
+<p><a id="user-content-Шаг-6-Установка-mpi-и-запуск-распределенных-задач"></a></p>
+<h2>
+<a id="user-content-шаг-6-установка-mpi-и-запуск-распределенных-задач" class="anchor" href="#%D1%88%D0%B0%D0%B3-6-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-mpi-%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 6. Установка MPI и запуск распределенных задач</h2>
+<p>Message Passing Interface (MPI, интерфейс передачи сообщений) — программный интерфейс (API) для передачи информации, который позволяет обмениваться сообщениями между процессами, выполняющими одну задачу. MPI является наиболее распространённым стандартом интерфейса обмена данными в параллельном программировании, существуют его реализации для большого числа компьютерных платформ. Используется при разработке программ для кластеров и суперкомпьютеров. Основным средством коммуникации между процессами в MPI является передача сообщений друг другу.</p>
+<p>Для продолжения установите компилятор gcc и mpich на главной машине и в образ загружаемой (пакеты <code>gcc</code> и <code>mpich-3.2</code>). На главной машине дополнительно поставьте пакет <code>mpich-3.2-devel</code>, чтобы можно было компилировать программы с использованием mpi.</p>
+<p><strong>Дополнение: На этом шаге пакет openmpi заменен на mpich из за проблем с совместимостью. Если вы ранее установили openmpi, просто дополнительно установите mpich.</strong></p>
+<p>Команды mpi доступны только после загрузки модуля окружения <code>module load mpi/mpich-3.2-x86_64</code>. Окружение сбрасывается при каждом входе в систему. Чтобы этого не происходило, добавьте модуль mpi в автозагрузку (из под учетной записи пользователя, не root), пропишите в конце файла <code>.bashrc</code> следующую строку:</p>
+<pre><code>module load mpi/mpich-3.2-x86_64
+</code></pre>
+<p><strong>Дополнение 2: В предыдущей версии методички была команда <code>module load mpi</code>, но в различных случаях она загружает разные версии mpi. Поэтому мы указали более конкретную реализацию. Для тех, кто ранее добавил в <code>.bashrc</code> строку <code>module load mpi</code>, просто поменяйте строку и перезайдите в учетную запись пользователя. Также, не забудьте перекомпилировать бинарный файл. Ещё один вариант избежать неоднозначного определения mpi - удалить openmpi с узла n1 и образа warewulf.</strong></p>
+<p>Затем войдите (или перезайдите) под учетной записью пользователя и создайте файл <code>hello.c</code> с следующим содержанием (онлайн <a href="https://pastebin.com/pVhY5skm" rel="nofollow">тут</a>):</p>
+<div class="highlight highlight-source-c"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">"</span>mpi.h<span class="pl-pds">"</span></span>
+#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>stdio.h<span class="pl-pds">&gt;</span></span>
+#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>stdlib.h<span class="pl-pds">&gt;</span></span>
+#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>unistd.h<span class="pl-pds">&gt;</span></span>
+
+<span class="pl-k">int</span> <span class="pl-en">main</span>(<span class="pl-k">int</span> argc, <span class="pl-k">char</span> *argv[])
+{
+  <span class="pl-k">int</span> num_procs, num_local;
+  <span class="pl-k">char</span> mach_name[MPI_MAX_PROCESSOR_NAME];
+  <span class="pl-k">int</span> mach_len;
+
+  <span class="pl-c1">MPI_Init</span> (&amp;argc,&amp;argv);
+  <span class="pl-c1">MPI_Comm_size</span> (MPI_COMM_WORLD, &amp;num_procs);
+  <span class="pl-c1">MPI_Comm_rank</span> (MPI_COMM_WORLD, &amp;num_local);
+  <span class="pl-c1">MPI_Get_processor_name</span>(mach_name,&amp;mach_len);
+
+  <span class="pl-c1">MPI_Barrier</span>(MPI_COMM_WORLD);
+
+  <span class="pl-k">if</span>(num_local == <span class="pl-c1">0</span>)
+      <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n</span> Hello, world (<span class="pl-c1">%i</span> procs total)<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>,num_procs);
+
+  <span class="pl-c1">MPI_Barrier</span>(MPI_COMM_WORLD);
+
+  <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>    --&gt; Process # <span class="pl-c1">%3i</span> of <span class="pl-c1">%3i</span> is alive. -&gt; <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>,
+   num_local,num_procs,mach_name);
+
+  <span class="pl-c1">MPI_Finalize</span>();
+  <span class="pl-k">return</span> <span class="pl-c1">0</span>;
+}</pre></div>
+<p>Далее скомпилируйте и запустите программу</p>
+<pre><code>mpicc -O3 hello.c -o hello
+mpiexec -n 3 --host n1,n2,n3 ./hello
+</code></pre>
+<p>где в параметре <code>--host</code> перечислите имена всех ваших машин, на которых нужно запустить задачу, а в параметре <code>-n</code> укажите количество запускаемых экземпляров программ. Должен получиться такой вывод:</p>
+<div class="highlight highlight-source-shell"><pre>[test@n1 <span class="pl-k">~</span>]$ mpiexec -n 3 --host n1,n2,n3 ./hello
+
+ Hello, world (3 procs total)
+    --<span class="pl-k">&gt;</span> Process <span class="pl-c"><span class="pl-c">#</span>   0 of   3 is alive. -&gt; n1</span>
+    --<span class="pl-k">&gt;</span> Process <span class="pl-c"><span class="pl-c">#</span>   1 of   3 is alive. -&gt; n3</span>
+    --<span class="pl-k">&gt;</span> Process <span class="pl-c"><span class="pl-c">#</span>   2 of   3 is alive. -&gt; n2</span></pre></div>
+<p><a id="user-content-Шаг-7-Система-очередей-slurm"></a></p>
+<h2>
+<a id="user-content-шаг-7-система-очередей-slurm" class="anchor" href="#%D1%88%D0%B0%D0%B3-7-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B5%D0%B9-slurm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 7. Система очередей Slurm</h2>
+<p>Для умного распределения вычислительных ресурсов и задач между ними, центры обработки данных используют сетевые диспетчеры задач. Один из них slurm.</p>
+<p>Он находится в репозитории <code>epel-release</code>, поэтому сначала подключите этот репозиторий.</p>
+<p>На машине n1 установите пакеты <code>slurm</code> и <code>slurm-slurmctld</code>, на машинах n2,n3 (в загружаемом образе) установите <code>slurm</code> и <code>slurm-slurmd</code>.</p>
+<p>Также в загружаемом образе активируйте сервисы:</p>
+<pre><code>systemctl enable munge
+systemctl enable slurmd
+</code></pre>
+<p>Дальнейшие команды выполняются от имени root.</p>
+<p>Чтобы slurm мог запускать задачи на удаленных узлах, протокол запуска необходимо защитить от доступа третьих лиц. Для этого используется утилита шифрования <code>munge</code>. Она установлена в зависимостях пакета <code>slurm</code>.</p>
+<p>Сгенерируйте ключ munge:</p>
+<pre><code>create-munge-key
+</code></pre>
+<p>Эта команда создала файл по адресу <code>/etc/munge/munge.key</code>. Теперь добавьте этот файл в оверлей warewulf. Тип: <code>system</code>, имя: <code>default</code>.</p>
+<p><em>Подсказка: перед импортом нужно создать папку <code>/etc/munge</code> в оверлее командой <code>wwctl overlay mkdir</code>.</em></p>
+<p>Так как номер системного пользователя <code>munge</code> отличается на хост машине и в виртуальной, для дальнейшей работы поправьте права на ключ в виртуальной машине. Запустите команду:</p>
+<pre><code>wwctl overlay chown system default /etc/munge/munge.key 998
+wwctl overlay build -a
+</code></pre>
+<p>Запустите сервис munge на n1 и добавьте сервис в автозагрузку. Также запустите (перезапустите) машину n2. Проверьте работу munge:</p>
+<pre><code>munge -n
+munge -n | unmunge
+munge -n | ssh n2 unmunge
+remunge
+</code></pre>
+<p>Все команды должны успешно выполняться.</p>
+<p><em>Если команда <code>munge -n | ssh n2 unmunge</code> не выполнилась, скорее всего на узле n2 не запустился демон <code>munge</code>. Зайдите на <code>n2</code> и проверьте его статус командой <code>systemctl status munge</code>. Если в логе ошибок сказано что <code>file /etc/munge/munge.key should be owned by 999</code>, то на главном узле запустите следующую команду и перезапустите виртуальную машину n2:</em></p>
+<pre><code>wwctl overlay chown system default /etc/munge/munge.key 999
+wwctl overlay build -a
+</code></pre>
+<p><a id="user-content-Настройка-slurm"></a></p>
+<h3>
+<a id="user-content-настройка-slurm" class="anchor" href="#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-slurm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Настройка Slurm</h3>
+<p>Далее вручную отредактируйте конфигурационный файл <code>/etc/slurm/slurm.conf</code>. В начале файла укажите параметры первой машины (не забудьте указать свой IP):</p>
+<pre><code>ControlMachine=n1
+ControlAddr=192.168.111.1
+</code></pre>
+<p>В конце файла должны быть перечислены все узлы и их параметры, а также узлы должны быть включены в очередь <code>debug</code>. Пример:</p>
+<pre><code># COMPUTE NODES
+NodeName=n[2-3] CPUs=1 State=UNKNOWN
+PartitionName=debug Nodes=n[2-3] Default=YES MaxTime=INFINITE State=UP
+</code></pre>
+<p>Конифгурационный файл должен быть всегда синхронизирован на всех узлах. Для этого
+добавьте этот файл в оверлей warewulf. Тип: <code>runtime</code>, имя: <code>default</code>.</p>
+<p>Перезагрузите клиентские машины.</p>
+<p>На хост-машине запустите сервисы slurm и munge (если ещё не запустили):</p>
+<pre><code>[sms]# systemctl enable munge
+[sms]# systemctl enable slurmctld
+[sms]# systemctl start munge
+[sms]# systemctl start slurmctld
+</code></pre>
+<p>Теперь можно поставить задачу в очередь:</p>
+<pre><code>srun --mpi=pmi2 -n 2 ./hello
+</code></pre>
+<p>Проверить статус вычислительных узлов можно командой <a href="https://slurm.schedmd.com/sinfo.html" rel="nofollow">sinfo</a>, состояние очереди командой <a href="https://slurm.schedmd.com/squeue.html" rel="nofollow">squeue</a>, а управлять задачами и slurm в целом можно командой <a href="https://slurm.schedmd.com/scontrol.html" rel="nofollow">scontrol</a>.</p>
+<p><a id="user-content-Дополнение-про-openmpi"></a></p>
+<h3>
+<a id="user-content-дополнение-про-openmpi" class="anchor" href="#%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE-openmpi" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Дополнение про openmpi</h3>
+<p>К сожалению, из openmpi сборки, которая распространяется в centos 7, удалили модули совместимости с slurm. Поэтому команда <code>srun -n 2 ./hello</code> может не сработать, либо отработать некорректно. Для исправления ситуации далее мы будем использовать mpich вместо openmpi. Установите пакеты <code>mpich-3.2</code> и <code>mpich-3.2-devel</code> на узел n1, и пакет <code>mpich-3.2</code> в контейнер в warewulf (<code>wwctl container exec ...</code>), чтобы он был доступен на узлах n2 и n3.</p>
+<p>Ключ <code>--mpi=pmi2</code> после команды srun явно указывает slurm по какому протоколу общаться с mpich.</p>
+<p><a id="user-content-Шаг-8-Запуск-вычислительной-задачи"></a></p>
+<h2>
+<a id="user-content-шаг-8-запуск-вычислительной-задачи" class="anchor" href="#%D1%88%D0%B0%D0%B3-8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Шаг 8. Запуск вычислительной задачи</h2>
+<p><strong>Внимание! Прочтите предыдущий раздел "Дополнение про openmpi" в конце шага 7. Он был добавлен недавно.</strong></p>
+<p>Зайдите под тестовым пользователем (не root). Скачайте и скомпилируйте код перемножения матриц:</p>
+<div class="highlight highlight-source-shell"><pre>curl https://gist.githubusercontent.com/uyras/c9368ee8154ee6e0c635c8da94a4efb7/raw/8f3a1cfe2ab68314941d9f6d7a6ac2b83df6b8c2/mpi_mm.c <span class="pl-k">&gt;</span> mpi_mm.c
+mpicc mpi_mm.c -o mpi_mm.o</pre></div>
+<p>Далее запустите задачу на двух узлах несколько раз. Сделайте скриншоты выполнения задач.</p>
+<div class="highlight highlight-source-shell"><pre>srun --mpi=pmi2 -n 2 ./mpi_mm.o</pre></div>
+<p>Также, запустите следующий скрипт (его уже надо запускать из под рута):</p>
+<div class="highlight highlight-source-shell"><pre>curl https://gist.githubusercontent.com/uyras/12eba7430514a84897bfec27e5135693/raw/746b1125b79d399bcd036bbb97d7c87685d4fe86/collect.sh <span class="pl-k">&gt;</span> collect.sh
+chmod +x collect.sh
+./collect.sh</pre></div>
+<p>Этот скрипт соберет данные о конфигурации вашей виртуальной машины и загрузит на сервер. В результате скрипт выдаст ссылку на отчет с конфигурацией. Пример вывода:</p>
+<div class="highlight highlight-source-shell"><pre>[root@n1 <span class="pl-k">~</span>]<span class="pl-c"><span class="pl-c">#</span> ./collect.sh</span>
+file name: 904314bef202ad2b18a5a20777d864a8.txt
+send this link or file above to the teacher: http://sprunge.us/8BKY9O</pre></div>
+<p>Прикрепите сделанные ранее скриншоты и ссылку к лабораторной работе в teams.</p>
+<p><a id="user-content-Финальное-слово"></a></p>
+<h2>
+<a id="user-content-финальное-слово" class="anchor" href="#%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%81%D0%BB%D0%BE%D0%B2%D0%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Финальное слово</h2>
+<p>Поздравляю! Вы настроили сетевую операционную систему. Представьте что Вы аминистратор центра обработки данных с 1000 нодами. Вам пришли ещё 100 нодов, и надо их быстро ввести в строй. Как это сделать? Легко:</p>
+<ol>
+<li>Собираем mac-адреса каждого узла</li>
+<li>Добавляем их в warewulf (<code>wwctl node add ...</code>)</li>
+<li>Добавляем информацию о них в slurm (файл <code>/etc/slurm/slurm.conf</code>).</li>
+<li>Нажимаем на каждом узле кнопку "включить"</li>
+<li>Готово. Узлы загрузят с главного узла образ операционной системы, получат ip адреса, и уведомят slurm о готовности.</li>
+</ol>
+<p><a id="user-content-Полезные-инструкции"></a></p>
+<h1>
+<a id="user-content-полезные-инструкции" class="anchor" href="#%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Полезные инструкции.</h1>
+<p><a id="user-content-Синхронизация-времени"></a></p>
+<h2>
+<a id="user-content-синхронизация-времени" class="anchor" href="#%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Синхронизация времени</h2>
+<p>При проблемах, связанных с проверкой подлинности, часто причиной является рассинхронизация времени.
+Для включения синхронизации установите и запустите пакет chrony:</p>
+<pre><code>yum -y install chrony
+systemctl enable chronyd
+systemctl start chronyd
+</code></pre>
+<p>В виртуальном контейнере нужно сделать те же действия, кроме <code>start</code>.</p>
+<p>Проверить синхронизацию можно так:</p>
+<div class="highlight highlight-source-shell"><pre>[root@n1 <span class="pl-k">~</span>]<span class="pl-c"><span class="pl-c">#</span> timedatectl</span>
+      Local time: Mon 2022-04-11 13:07:01 +10
+  Universal time: Mon 2022-04-11 03:07:01 UTC
+        RTC time: Mon 2022-04-11 02:49:12
+       Time zone: Asia/Vladivostok (+10, +1000)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC <span class="pl-k">in</span> <span class="pl-k">local</span> TZ: no
+      DST active: n/a</pre></div>
+<p><a id="user-content-Ошибка-invalid-node-name-specified-при-запуске-задач-srun"></a></p>
+<h2>
+<a id="user-content-ошибка-invalid-node-name-specified-при-запуске-задач-srun" class="anchor" href="#%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-invalid-node-name-specified-%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87-srun" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ошибка <code>Invalid node name specified</code> при запуске задач srun.</h2>
+<p>Возникает из за того, что демон slurmd на n2 и n3 запускается перед тем как в системе установился корректный hostname. Для решения проблемы в контейнере в файле <code>/usr/lib/systemd/system/slurmd.service</code> добавьте строку <code>ExecStartPre=/bin/sleep 30</code> в раздел <code>[Service]</code>.</p>
+<p><a id="user-content-Ошибка-required-node-not-available-down-drained-or-reserved-при-запуске-задачи-srun"></a></p>
+<h2>
+<a id="user-content-ошибка-required-node-not-available-down-drained-or-reserved-при-запуске-задачи-srun" class="anchor" href="#%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-required-node-not-available-down-drained-or-reserved-%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-srun" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ошибка <code>Required node not available (down, drained or reserved)</code> при запуске задачи srun.</h2>
+<p>Узел не доступен. Попробуйте перевести его в состояние отключения и обратно:</p>
+<pre><code>scontrol update nodename=n2 state=down reason=service
+scontrol update nodename=n2 state=resume
+</code></pre>
+<p>если не помогло, проверьте настройки узлов. slurmd на вычислительном узле не может связаться с slurmctld на главном узле.</p>
+<p><a id="user-content-При-редактировании-контейнера-yum-не-может-связаться-с-зеркалами-удаленного-репозитория"></a></p>
+<h2>
+<a id="user-content-при-редактировании-контейнера-yum-не-может-связаться-с-зеркалами-удаленного-репозитория" class="anchor" href="#%D0%BF%D1%80%D0%B8-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0-yum-%D0%BD%D0%B5-%D0%BC%D0%BE%D0%B6%D0%B5%D1%82-%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D1%81-%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D0%B0%D0%BC%D0%B8-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>При редактировании контейнера Yum не может связаться с зеркалами удаленного репозитория</h2>
+<p>На самом деле, виртуальный контейнер не может связаться ни с одним интернет-ресурсом. Это связано с неправильной настройкой DNS. Проверьте содержимое файла <code>/etc/resolv.conf</code> на <code>n1</code> и в контейнере. Они должны быть одинаковыми.</p>
+<p><a id="user-content-При-запуске-mpiexec-выдает-ошибку-orte-was-unable-to-reliably-start-one-or-more-daemons"></a></p>
+<h2>
+<a id="user-content-при-запуске-mpiexec-выдает-ошибку-orte-was-unable-to-reliably-start-one-or-more-daemons" class="anchor" href="#%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpiexec-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-orte-was-unable-to-reliably-start-one-or-more-daemons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>При запуске mpiexec выдает ошибку <code>ORTE was unable to reliably start one or more daemons</code>
+</h2>
+<p>Это случается потому что mpiexec на узле n2 доступен только при загруженном модуле mpi. Для автоматического подключения модуля при входе на узел добавьте в файл <code>.bashrc</code> в корневой директории вашего (тестового) пользователя команду <code>module load mpi</code>.</p>
+<p><a id="user-content-При-запуске-mpiexec-выдает-ошибку-there-are-not-enough-slots-available-in-the-system"></a></p>
+<h2>
+<a id="user-content-при-запуске-mpiexec-выдает-ошибку-there-are-not-enough-slots-available-in-the-system" class="anchor" href="#%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpiexec-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-there-are-not-enough-slots-available-in-the-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>При запуске mpiexec выдает ошибку <code>There are not enough slots available in the system</code>
+</h2>
+<p>Например, для задачи вы указали <code>-n 3</code> и в параметре <code>--hosts</code> перечислили 2 узла. По умолчанию в вычислительной системе должно быть не меньше ядер чем мы указываем в <code>-n</code>ю Так как каждый узел - это виртуальная машина с одноядерным процессором, то в данном случае для выполнения не хватает ещё одного узла. Для обхода этой ошибки запускайте <code>mpiexec</code> с параметром <code>--oversubscribe</code>.</p>
+<p><a id="user-content-При-запуске-srun-выдает-ошибку-srun-error-couldnt-find-the-specified-plugin-name-for-mpipmix"></a></p>
+<h2>
+<a id="user-content-при-запуске-srun-выдает-ошибку-srun-error-couldnt-find-the-specified-plugin-name-for-mpipmix" class="anchor" href="#%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-srun-%D0%B2%D1%8B%D0%B4%D0%B0%D0%B5%D1%82-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D1%83-srun-error-couldnt-find-the-specified-plugin-name-for-mpipmix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>При запуске srun выдает ошибку <code>srun: error: Couldn't find the specified plugin name for mpi/pmix</code>
+</h2>
+<p>Значит версия openmpi, доступная в репозитории, собрана без поддержки pmix.
+Для решения проблемы запускайте <code>srun</code> с ключом <code>--mpi=pmi2</code>.</p>
+<p><a id="user-content-При-запуске-mpi-helloc-программа-зависает"></a></p>
+<h2>
+<a id="user-content-при-запуске-mpi-helloc-программа-зависает" class="anchor" href="#%D0%BF%D1%80%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B5-mpi-helloc-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B0%D0%B5%D1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>При запуске mpi hello.c программа зависает</h2>
+<p>Это происходит потому что на машины n2 и n3 приходят пакеты с машины n1, и они пытаются ответить в карту, отвечающую за nat-сеть. В этом можно убедиться если вывести таблицу маршрутов:</p>
+<pre><code>ip route list
+</code></pre>
+<p>Там правило <code>default</code>, которое перенаправляет пакеты в сеть <code>10.10.*.*</code> имеет параметр metric ниже чем правило для перенаправления пакетов <code>192.168.*.*</code>. Это значит, что оно будет выполняться первым.</p>
+<p>На самом деле, начиная с шага 4, мы можем отключить на узлах <code>n2</code> и <code>n3</code> сетевую карту nat. На этих узлах нам больше не нужен будет интернет. После отключения второй сетевой карты, таблица маршрутов должна содержать всего одну запись. Поэтому проблем не возникнет.</p>
+</article></body></html>

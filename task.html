@@ -1141,7 +1141,7 @@ systemctl enable --now warewulfd
 Warewulf поддерживает импорт виртуальных машин из публичных сервисов. Например, docker:</p>
 <pre><code>wwctl container import docker://warewulf/centos-7 centos-7 --setdefault
 </code></pre>
-<p>Чтобы понять, что за ошибка возникает при установке необходимо добавить в конец команды --debug. До установки рекомендуется поставить gzip версии 1.9 или выше. Источник для установки gzip расположен по ссылке: https://centos.pkgs.org/8/centos-baseos-x86_64/gzip-1.9-12.el8.x86_64.rpm.html</p>
+<p>Чтобы понять, что за ошибка возникает при установке необходимо добавить в конец команды --debug. До установки рекомендуется поставить gzip версии 1.9 или выше. Источник для установки gzip расположен по <a href="https://centos.pkgs.org/8/centos-baseos-x86_64/gzip-1.9-12.el8.x86_64.rpm.html" rel="nofollow">ссылке</a>.</p>
 <p>Также импортируем ядро в контейнер, с которым будут загружаться 2 и 3 виртуальные машины. Это будет то же ядро, что запущено на первой виртуальной машине:</p>
 <pre><code>wwctl kernel import $(uname -r) --setdefault
 </code></pre>

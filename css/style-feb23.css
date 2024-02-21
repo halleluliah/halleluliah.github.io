@@ -44,9 +44,9 @@ body {
 .container .card .image {
   position : relative;
   width : 552px;
-  height : 400px;
+  height : 200px;
   
-  top : -40%;
+  top : -80%;
   left: 8px;
   box-shadow : 10 15px 15px rgba(0,0,0,0.5);
   z-index : 1;
@@ -59,7 +59,7 @@ body {
 
 .container .card .content {
   position : relative;
-  top : -140px;
+  top : -100px;
   padding : 10px 15px;
   color : #111;
   text-align : center;
